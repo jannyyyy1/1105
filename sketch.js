@@ -10,12 +10,12 @@ function setup() {
 function draw() {
   background(220);
 
-  let gravity = createVector(0, 0.3);
-  ball.addForce(gravity);
+  //let gravity = createVector(0, 0.3);
+  //ball.addForce(gravity);
 
   if(mouseIsPressed){
-    let wind = createVector(0.1,0)
-    ball.addForce(wind);
+    let touch = createVector(0.3,0)
+    ball.addForce(touch);
     }
 
   ball.update();
